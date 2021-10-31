@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cards{
+  width: 50px;
+  height:80vh;
+  background-color: rgb(53, 99, 139);
+  position: relative;
+}
+
+.wave{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  background-color: white;
+  z-index: 11;
+  opacity: .3;
+  border-radius: 43%;
+  animation: drift 300ms infinite linear;
+}
+
+.wave.-one{
+  animation: drift 500ms infinite linear;
+  opacity: 0.2;
+}
+.wave.-two{
+  animation: drift 500ms infinite linear;
+  opacity: 0.1;
+}
+.wave.-three{
+  animation: drift 500ms infinite linear;
+  opacity: 0.2;
+}
+
+
+@keyframes drift {
+  from{
+    transform: rotate(0deg);
+  }
+  from{
+    /* transform: rotate(360deg); */
+  }
+  to{
+    /* transform: rotate(30deg); */
+  }
+
+}
+.error{
+  font-size:2rem;
+  color: white;
+  margin-top: 1rem;
+}
